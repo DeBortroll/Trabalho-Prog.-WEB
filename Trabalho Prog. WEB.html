@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trabalho Prog. WEB</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Plano de Fundo.png");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px"></span>
+  </div>
+</header>
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">SOBRE MIM</span></h5>
+    <p>Sou profissional da área jurídica/contábil, trabalhando a mais de 15 anos exclusivamente em pericias judiciais, e extrajudiciais.<br>Minha paixão são as perícias trabalhistas, que me motivam a estudar e me aperfeiçoar a cada dia.</p>
+    <img src="Foto de Perfil.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+  </div>
+</div>
+
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">MEU CURRÍCULO</span></h5>
+    <p>> Graduada em Ciências Contábeis em 1992;
+      <br>> Graduada em Direito em 2012;
+      <br>> Pós-Graduada em Trabalho e direito Previdenciário em 2019;
+      <br>> Mais de 16 anos de experiência em pericias judiais e extre-judiciais.</p>
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ONDE VOCÊ PODE ME ACHAR</span></h5>
+    <p><strong>Instagram:</strong> @resendepericia</p>
+    <p><strong>Whatsapp:</strong>
+      <a href="https://wa.me/939592001?text=Ol%C3%A1,%20gostaria%20de%20pedir%20um%20um%20or%C3%A7amento.">(31) 3959-2001</a>
+    </p>
+    <p><strong>Endereço:</strong> Centro, Pte. Nova - MG, 35430-001</p>
+    <p><strong>Horário de Funcionamento:</strong><br>> seg.:	08:00 – 18:00<br>
+      > ter.:	13:30 – 19:30<br>
+      > qua.:	08:00 – 18:00<br>
+      > qui.:	13:30 – 19:30<br>
+      > sex.:	08:00 – 18:00<br>
+      > sáb.:	Fechado<br>
+      > dom.:	Fechado</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d934.8024206427519!2d-42.90815797075928!3d-20.415450699145865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa497ae5a92895d%3A0x3932f6141b12f2ac!2sResende%20Per%C3%ADcia%20Trabalhista%20e%20C%C3%ADveis!5e0!3m2!1spt-BR!2sbr!4v1651065777151!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p><strong>Quer me Mandar uma Mensagem?</strong></p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Seu Nome" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Quantas Pessoas?" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Data e Hora" required name="date" value="2004-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensagem ou Requisito Especial?" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">ENVIAR MENSAGEM</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
